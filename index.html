@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE GAME USING HTML CSS JS BY TODAY'S RAJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="container">
+        
+
+        <div class="Sms-container">
+            <div class="Heading">
+                <h1 id="GameSMS"><i class="fa-solid fa-dice"></i> Tic Tic Toe Game </h1>
+            </div>
+            <div class="scores">
+                    <caption>Score : </caption>
+                <p class="player-1score">Player 1 : 0</p>
+                <p class="player-2score">Player 2 : 0</p>
+            </div>
+            <div class="control-btns">
+                <button onclick="playWithRobort();" class="btns">Play With Robort</button>
+                <button onclick="play_1vs1();" class="btns">Play 1 VS 1</button>
+            </div>
+
+            <div>
+            <video id="GameWinner-Video" loop autoplay muted src="/assets/Winning.mp4"></video>
+        </div>
+        <button class="infoDescription btns">Info
+            <span>
+                <i class="fa-solid fa-circle-info"></i>
+            </span>
+            <br>
+        </button>
+        <button class="closebtn btns">Back
+            <i class="fa-solid fa-rotate-left"></i>
+        </button>
+        </div>
+        
+        <div class="grid-container">
+            <div class=" grid-borders">
+                <div class="styleBox  styleBox-top"></div>
+                <div class="styleBox styleBox-bottom"></div>
+                <div class="styleBox styleBox-left"></div>
+                <div class="styleBox styleBox-right"></div>
+
+                <div class="info">
+                    <p>Hi, Everyone My Name is Rajendra Singh I Build this Game using HTML CSS JavaScript. <br> Follow Me On GitHub Link : 
+                        <br><br>
+                        <a target="_blank" href="https://github.com/todaysraj"><i class="fa-brands fa-github"></i>Github</a>
+                         <a target="_blank" href="https://www.youtube.com/@todaysrajcoding"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                        
+                        <br><br>
+                    <ul>
+                        <h4>How to Play</h4>
+                      <li>1. Take Turns: The first player places their symbol (X or O) in any empty square.</li>
+                      <br>
+                      <li>2. Alternate: Players alternate turns, placing their symbol in one remaining open square.</li>
+                      <br>
+                      <li>3. Attack and Defend: Try to get three of your symbols in a horizontal, vertical, or diagonal line while blocking your opponent from doing the same.</li>
+                      <br>
+                    </ul>
+
+                    <caption style="color: gray;">© 2026 Today's Raj Coding. All rights reserved.</caption>
+                </p>
+                </div>
+
+                <div class="ResultAnimationBox">
+                    <div><i class="fa-solid fa-xmark"></i> <i class="fa-regular fa-circle"></i></div>
+                    <p>Game Drow</p>
+                </div>
+
+                <!-- Player-1 -->
+                <div class="game-container  Player-1">
+                    <button class="grid-boxes" id="box1">1</button>
+                    <button class="grid-boxes" id="box2">2</button>
+                    <button class="grid-boxes" id="box3">3</button>
+                    <button class="grid-boxes" id="box4">4</button>
+                    <button class="grid-boxes" id="box5">5</button>
+                    <button class="grid-boxes" id="box6">6</button>
+                    <button class="grid-boxes" id="box7">7</button>
+                    <button class="grid-boxes" id="box8">8</button>
+                    <button class="grid-boxes" id="box9">9</button>
+                </div>
+
+            </div>
+        </div>
+          <div>
+            <button class="btn">Restart</button>
+        </div>
+        <footer>
+            <p>Build With Love :: Today's Raj Coding </p>
+        </footer>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
